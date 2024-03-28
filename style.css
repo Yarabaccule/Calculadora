@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80hv;
+    font-family: 'Inter', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+h1{
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+span{
+    font-size: 1rem;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.display{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(32, 32, 32);
+    color: gray;
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: end;
+    padding: 1rem;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+
+input:disabled {
+    cursor: default;
+    background-color:wheat;
+    border-radius: 4px;
+    height: 50px;
+    width: 170px;
+    font-size: medium;
+}
+
+
+.buttons{
+    padding: 1rem;
+    background: #f3f3f3;
+    margin-top: -20px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fourth{
+    margin-bottom: 0;
+}
+
+.button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: #2c2c2c;
+    border: none;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: gray;
+    color: #f2f2f2;
+    transition: .2s;
+}
+
+.button-clear{
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 300px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.equal{
+    background-color: rgb(32, 32, 32);
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.equal:hover{
+    background-color: rgb(56, 56, 56);
+    transition: .2s;
+}
